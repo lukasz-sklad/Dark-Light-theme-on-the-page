@@ -19,6 +19,7 @@ html[data-theme=dark] {
 body {
     font-family: "Lato", sans-serif;
     background-color: var(--bg-color);
+    /* background-image: url('./img/photo1.png'); */
     color: var(--font-color);
     max-width: 900px;
     margin: 0 auto;
@@ -130,3 +131,33 @@ input:checked+.slider {
 input:checked+.slider:before {
     transform: translateX(26px);
 }
+
+/* branch */
+
+@media (max-width: 768px) {
+    body {
+        border: 10px solid black;
+        padding-bottom: 20px;
+        font-size: calc(1rem + 0.25vh);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    body {
+        margin-top: 20px;
+        padding: 1%;
+        box-shadow: 2px 2px 4px 2px black;
+        font-size: calc(1rem + 0.25vh);
+    }
+    p {
+        padding-top: 2%;
+    }
+}
+
+/*
+@media (min-resolution: 192dpi) {
+    .body {
+        background-image: url('photo@2x.png');
+    }
+}
+*/
